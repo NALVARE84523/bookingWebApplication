@@ -1,16 +1,198 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/styles/globalStyles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./assets/styles/globalStyles.css" />
+    <link rel="stylesheet" href="./assets/styles/menuHam.css" />
+    <link rel="stylesheet" href="./assets/styles/PrincipalSliderHome.css" />
+    <link rel="stylesheet" href="./assets/styles/SecundarySliderHome.css" />
+    <link rel="stylesheet" href="./assets/styles/gallery.css" />
     <title>Reservas</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <h1>Reservas</h1>
+      <nav>
+        <a href="#">
+          <img
+            class="logo"
+            src="./assets/img/icons/LogoReserva.png"
+            alt="logo"
+          />
+        </a>
+        <ul class="enlaces-menu">
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Servicios</a></li>
+          <li><a href="#">Equipo</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+        <ul class="list-icons">
+          <li>
+            <a href="#"><img src="./assets/img/icons/lupa.png" /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="./assets/img/icons/bolsa-de-la-compra.png"
+            /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./assets/img/icons/favorito.png" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./assets/img/icons/iniciar-sesion.png" /></a>
+          </li>
+        </ul>
+        <button class="ham" type="button">
+          <span class="br-1"></span>
+          <span class="br-2"></span>
+          <span class="br-3"></span>
+        </button>
+      </nav>
     </header>
-    <script src="./assets/scripts/index.js"></script>
-</body>
+    <main>
+      <section class="sliderHome">
+        <div class="slider">
+          <div class="slides">
+            <input type="radio" name="radio-btn" id="radio1" />
+            <input type="radio" name="radio-btn" id="radio2" />
+            <input type="radio" name="radio-btn" id="radio3" />
+            <input type="radio" name="radio-btn" id="radio4" />
+            <input type="radio" name="radio-btn" id="radio5" />
+
+            <div class="slide first">
+              <img src="./assets/img/glamping1.jpg" />
+            </div>
+            <div class="slide">
+              <img src="./assets/img/glamping2.jpg" />
+            </div>
+            <div class="slide">
+              <img src="./assets/img/glamping3.jpg" />
+            </div>
+            <div class="slide">
+              <img src="./assets/img/glamping4.jpg" />
+            </div>
+            <div class="slide">
+              <img src="./assets/img/glamping5.jpg" />
+            </div>
+
+            <div class="navigation-auto">
+              <div class="auto-btn1"></div>
+              <div class="auto-btn2"></div>
+              <div class="auto-btn3"></div>
+              <div class="auto-btn4"></div>
+              <div class="auto-btn5"></div>
+            </div>
+          </div>
+          <div class="navigation-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+            <label for="radio5" class="manual-btn"></label>
+          </div>
+        </div>
+      </section>
+      <section class="slider-secundary">
+        <div class="container">
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./assets/img/restaurante1.jpg" />
+                <div class="card-description">
+                  <div class="card-text">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Veniam libero dicta sapiente commodi ipsa.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/img/restaurante2.jpg" />
+                <div class="card-description">
+                  <div class="card-text">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Veniam libero dicta sapiente commodi ipsa.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/img/restaurante3.jpg" />
+                <div class="card-description">
+                  <div class="card-text">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Veniam libero dicta sapiente commodi ipsa.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/img/restaurante4.jpg" />
+                <div class="card-description">
+                  <div class="card-text">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Veniam libero dicta sapiente commodi ipsa.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/img/restaurante5.jpg" />
+                <div class="card-description">
+                  <div class="card-text">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Veniam libero dicta sapiente commodi ipsa.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/img/restaurante6.jpg" />
+                <div class="card-description">
+                  <div class="card-text">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Veniam libero dicta sapiente commodi ipsa.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="galery">
+        <div class="galery_container">
+          <h2>Lorem, ipsum dolor.</h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+          <div class="galery_containerImgs">
+            <div class="image"><img src="./assets/img/coworking1.jpg" alt=""/></div>
+            <div class="image"><img src="./assets/img/coworking2.jpg" alt=""/></div>
+            <div class="image"><img src="./assets/img/coworking3.jpg" alt=""/></div>
+          </div>
+        </div>
+      </section>
+      <section class="">
+        
+      </section>
+    </main>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./assets/scripts/jquery.min.js"></script>
+    <script src="./assets/scripts/slider.js"></script>
+  </body>
 </html>

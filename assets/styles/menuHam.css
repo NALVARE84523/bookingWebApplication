@@ -1,0 +1,143 @@
+.logo {
+  width: 60px;
+  height: 40px;
+  object-fit: contain;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  min-height: 15vh;
+  background-color: black;
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+}
+
+@media(min-width:768px) {
+  nav {
+    background-color: transparent;
+  }
+}
+
+.ham {
+  display: none;
+  cursor: pointer;
+  border: none;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+}
+
+.ham span {
+  display: block;
+  background-color: #f3f3f3;
+  height: 3px;
+  width: 28px;
+  margin: 10px auto;
+  border-radius: 2px;
+}
+
+.enlaces-menu {
+  display: flex;
+  padding: 0;
+}
+
+.enlaces-menu li {
+  padding: 0 40px;
+  list-style-type: none;
+  transition: 0.3s;
+}
+
+.enlaces-menu li a {
+  text-decoration: none;
+  font-size: 1.8rem;
+  color: #000;
+  font-weight: 600;
+}
+
+.enlaces-menu li:hover {
+  background-color: rgb(62, 130, 197);
+}
+
+@media (max-width: 767px) {
+  .logo {
+    padding-left: 25px;
+  }
+
+  .ham {
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    transition: .2s .1s;
+  }
+
+  .ham:hover {
+      transform: rotate(360deg);
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 25px 0;
+  }
+
+  .enlaces-menu {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 88vh;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: none;
+    opacity: 0;
+  }
+  .enlaces-menu li {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+  }
+}
+
+@keyframes muestraMenu {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.enlaces-menu.active {
+  display: flex;
+  animation: muestraMenu 350ms ease-in-out both;
+}
+
+.br-1.animate {
+    transform: rotate(-45deg) translate(-10px, 8px);
+}
+.br-2.animate {
+    opacity: 0;
+}
+.br-3.animate {
+    transform: rotate(45deg) translate(-10px, -8px);
+}
+.list-icons {
+  display: none;
+  gap: 2rem;
+}
+@media(min-width:768px) {
+  .list-icons {
+    display: flex;
+  }
+}
+.list-icons li {
+  list-style: none;
+}
+.list-icons li a img {
+  width: 20px;
+  height: 20px;
+}
