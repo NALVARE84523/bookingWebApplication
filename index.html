@@ -16,11 +16,14 @@
     <link rel="stylesheet" href="./assets/styles/PrincipalSliderHome.css" />
     <link rel="stylesheet" href="./assets/styles/SecundarySliderHome.css" />
     <link rel="stylesheet" href="./assets/styles/gallery.css" />
+    <link rel="stylesheet" href="./assets/styles/swiperCard.css" />
+    <link rel="stylesheet" href="./assets/styles/filterReserved.css" />
+    <link rel="stylesheet" href="./assets/styles/footer.css" />
     <title>Reservas</title>
   </head>
   <body>
     <header>
-      <nav>
+      <nav id="header">
         <a href="#">
           <img
             class="logo"
@@ -36,18 +39,20 @@
         </ul>
         <ul class="list-icons">
           <li>
-            <a href="#"><img src="./assets/img/icons/lupa.png" /></a>
+            <a href="#"><img src="./assets/img/icons/lupa.png" alt="" /></a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./assets/img/icons/bolsa-de-la-compra.png" alt="" />
+            </a>
+          </li>
+          <li>
+            <a href="#"><img src="./assets/img/icons/favorito.png" alt="" /></a>
           </li>
           <li>
             <a href="#"
-              ><img src="./assets/img/icons/bolsa-de-la-compra.png"
+              ><img src="./assets/img/icons/iniciar-sesion.png" alt=""
             /></a>
-          </li>
-          <li>
-            <a href="#"><img src="./assets/img/icons/favorito.png" /></a>
-          </li>
-          <li>
-            <a href="#"><img src="./assets/img/icons/iniciar-sesion.png" /></a>
           </li>
         </ul>
         <button class="ham" type="button">
@@ -58,7 +63,8 @@
       </nav>
     </header>
     <main>
-      <section class="sliderHome">
+      <section class="sliderHome" id="principalBanner">
+        <h2 class="d-none">Banner</h2>
         <div class="slider">
           <div class="slides">
             <input type="radio" name="radio-btn" id="radio1" />
@@ -68,19 +74,19 @@
             <input type="radio" name="radio-btn" id="radio5" />
 
             <div class="slide first">
-              <img src="./assets/img/glamping1.jpg" />
+              <img src="./assets/img/glamping1.jpg" alt="" />
             </div>
             <div class="slide">
-              <img src="./assets/img/glamping2.jpg" />
+              <img src="./assets/img/glamping2.jpg" alt="" />
             </div>
             <div class="slide">
-              <img src="./assets/img/glamping3.jpg" />
+              <img src="./assets/img/glamping3.jpg" alt="" />
             </div>
             <div class="slide">
-              <img src="./assets/img/glamping4.jpg" />
+              <img src="./assets/img/glamping4.jpg" alt="" />
             </div>
             <div class="slide">
-              <img src="./assets/img/glamping5.jpg" />
+              <img src="./assets/img/glamping5.jpg" alt="" />
             </div>
 
             <div class="navigation-auto">
@@ -101,13 +107,14 @@
         </div>
       </section>
       <section class="slider-secundary">
+        <h2 class="d-none">Banner two</h2>
         <div class="container">
           <div class="swiper-button-next"></div>
           <div class="swiper-button-prev"></div>
           <div class="swiper mySwiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <img src="./assets/img/restaurante1.jpg" />
+                <img src="./assets/img/restaurante1.jpg" alt="" />
                 <div class="card-description">
                   <div class="card-text">
                     <p>
@@ -118,7 +125,7 @@
                 </div>
               </div>
               <div class="swiper-slide">
-                <img src="./assets/img/restaurante2.jpg" />
+                <img src="./assets/img/restaurante2.jpg" alt="" />
                 <div class="card-description">
                   <div class="card-text">
                     <p>
@@ -129,7 +136,7 @@
                 </div>
               </div>
               <div class="swiper-slide">
-                <img src="./assets/img/restaurante3.jpg" />
+                <img src="./assets/img/restaurante3.jpg" alt="" />
                 <div class="card-description">
                   <div class="card-text">
                     <p>
@@ -140,7 +147,7 @@
                 </div>
               </div>
               <div class="swiper-slide">
-                <img src="./assets/img/restaurante4.jpg" />
+                <img src="./assets/img/restaurante4.jpg" alt="" />
                 <div class="card-description">
                   <div class="card-text">
                     <p>
@@ -151,7 +158,7 @@
                 </div>
               </div>
               <div class="swiper-slide">
-                <img src="./assets/img/restaurante5.jpg" />
+                <img src="./assets/img/restaurante5.jpg" alt="" />
                 <div class="card-description">
                   <div class="card-text">
                     <p>
@@ -162,7 +169,7 @@
                 </div>
               </div>
               <div class="swiper-slide">
-                <img src="./assets/img/restaurante6.jpg" />
+                <img src="./assets/img/restaurante6.jpg" alt="" />
                 <div class="card-description">
                   <div class="card-text">
                     <p>
@@ -181,16 +188,101 @@
           <h2>Lorem, ipsum dolor.</h2>
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
           <div class="galery_containerImgs">
-            <div class="image"><img src="./assets/img/coworking1.jpg" alt=""/></div>
-            <div class="image"><img src="./assets/img/coworking2.jpg" alt=""/></div>
-            <div class="image"><img src="./assets/img/coworking3.jpg" alt=""/></div>
+            <div class="image">
+              <img src="./assets/img/coworking1.jpg" alt="" />
+            </div>
+            <div class="image">
+              <img src="./assets/img/coworking2.jpg" alt="" />
+            </div>
+            <div class="image">
+              <img src="./assets/img/coworking3.jpg" alt="" />
+            </div>
           </div>
         </div>
       </section>
-      <section class="">
-        
+      <section class="swiperCard">
+        <div class="swiperCard-text">
+          <div class="swiperCard-title">
+            <h2>Lorem ipsum dolor sit.</h2>
+          </div>
+          <div class="swiperCard-descriptioin">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Architecto, maiores!
+            </p>
+          </div>
+          <div class="swiperCard-button">comprar</div>
+        </div>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./assets/img/billar1.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/img/bar1.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/img/billar2.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/img/billar2.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/img/billar3.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/img/billar4.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="filterReserved">
+        <div id="search-container">
+          <input
+            type="search"
+            id="search-input"
+            placeholder="Busca el nombre de la reserva"
+          />
+          <button id="search">Buscar</button>
+        </div>
+        <div id="buttons">
+          <button class="button-value" onclick="filterProduct('todo')">Todo</button>
+          <button class="button-value" onclick="filterProduct('Glamping')">Glamping</button>
+          <button class="button-value" onclick="filterProduct('Coworking')">Coworking</button>
+          <button class="button-value" onclick="filterProduct('Billar')">Billar</button>
+          <button class="button-value" onclick="filterProduct('Restaurante')">Restaurante</button>
+        </div>
+        <div id="products">
+  
+        </div>
       </section>
     </main>
+    <footer>
+      <div>
+        <h3>NOSOTROS</h3>
+        <a href="#">Organizacion</a>
+        <a href="#">Servicio</a>
+        <a href="#">Tiendas</a>
+      </div>
+      <div>
+        <div>
+          <h3>TE AYUDAMOS</h3>
+          <a href="#">Contacto</a>
+          <a href="#">Preguntas frecuentes</a>
+          <a href="#">Terminos y condiciones</a>
+          <a href="#">Politica de datos</a>
+        </div>
+        <div>
+          <h3>EMPRESA</h3>
+          <a href="#">Trabaja con nosotros</a>
+          <a href="#">Plan de fidelizacion</a>
+          <a href="#">News</a>
+        </div>
+      </div>
+      <div>
+        <a href="#" class="buttonFooter">BUTTON</a>
+      </div>
+    </footer>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./assets/scripts/jquery.min.js"></script>
     <script src="./assets/scripts/slider.js"></script>

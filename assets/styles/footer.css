@@ -1,0 +1,36 @@
+footer {
+    background: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    text-align: center;
+}
+footer > div {
+    padding: 1rem 0;
+}
+
+footer div {
+    display: flex;
+    flex-direction: column;
+}
+
+footer div a {
+    color: white;
+    text-decoration: none;
+}
+
+footer div .buttonFooter {
+    border: 1px solid white;
+    padding: 1rem;
+}
+
+@media (min-width: 992px) {
+    footer {
+        flex-direction: row;
+        text-align: left;
+        font-size: 1.8rem;
+        padding: 3rem 8rem;
+        justify-content: space-evenly;
+    }
+}
